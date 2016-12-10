@@ -6,7 +6,13 @@
 </head>
 
 <body>
-    <h1>Hello, world!</h1>
+
+    
+    <%for (var i=0; i<books.length; i++){%>
+    <h1><%=books[i].id%></h1>
+        <h1><%=books[i].name%></h1>
+    <hr/>
+    <%}%>
     <%include partial/script.ejs%>
 </body>
 
