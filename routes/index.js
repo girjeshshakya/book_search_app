@@ -10,6 +10,7 @@ exports.home = function (req, res) {
 };
 //book_single
 exports.book_single = function (req, res) {
+    var book_num = req.params.book_number;
     res.send("this is server response for Book" + book_num);
 };
 //notFound
